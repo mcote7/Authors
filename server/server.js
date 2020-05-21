@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json()); // This is new
 app.use(express.urlencoded({ extended: true })); // This is new
 
-require('./routes/authors.routes')(app);
+require('./routes/author.routes')(app);
 app.listen(8000, () => {
     console.log("Listening at Port 8000 aww yea!!!")
 })

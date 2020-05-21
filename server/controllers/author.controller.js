@@ -3,7 +3,7 @@ const { Author } = require('../models/author.model');
 
 module.exports.createAuthor = (req, res) => {
     const { name } = req.body;
-    Product.create({
+    Author.create({
         name,
     })
         .then(author => res.json({ author: author }))
@@ -17,7 +17,7 @@ module.exports.updateAuthor = (req, res) => {
     }
 
 module.exports.allAuthors = (req, res) => {
-    Product.find({})
+    Author.find({})
         .then(allAuthors => res.json(allAuthors))
         .catch(err => res.json({ message: "Something went wrong . . .", error: err }));
     }
@@ -28,8 +28,8 @@ module.exports.deleteAuthor = (req, res) => {
         .catch(err => res.json(err))
     }
 
-    // module.exports.oneAuthor = (req, res) => {
-    //     Author.findOne({_id:req.params.id})
-    //         .then(author => res.json(author))
-    //         .catch(err => res.json({ message: "Something went wrong . . .", error: err }));
-    //     }
+module.exports.oneAuthor = (req, res) => {
+    Author.findOne({_id:req.params.id})
+        .then(author => res.json(author))
+        .catch(err => res.json({ message: "Something went wrong . . .", error: err }));
+    }

@@ -5,5 +5,5 @@ module.exports = function(app){
     app.post('/api/author/create', AuthorsController.createAuthor);
     app.put('/api/author/update/:id', AuthorsController.updateAuthor);
     app.delete('/api/author/delete/:id', AuthorsController.deleteAuthor);
-    // app.get('/api/product/:id', AuthorsController.oneAuthor);
+    app.get('/api/author/:id', AuthorsController.oneAuthor);
 }
