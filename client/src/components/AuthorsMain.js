@@ -29,10 +29,26 @@ const AuthorsMain = () => {
 
     return (
 
-        <div>
-            {loaded && authors.sort((a, b) => (a.name > b.name) ? 1 : -1).map((author, idx)=>{return <p key={idx}>author :&nbsp;&nbsp;{author.name}
-            <Link to={"/update/"+author._id} className="updateLink">update</Link>
-            <button className="deletebtn" onClick={(e)=>{deleteAuthor(author._id)}}>delete</button></p>})}
+        <div className="row maindisplay">
+            <div className="col"></div>
+            <div className="col tablewrapper">
+            <table>
+                <thead>
+                    <th>Author Name</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody>
+                {loaded && authors.sort((a, b) => (a.name > b.name) ? 1 : -1).map((author, idx)=>{
+                return <tr key={idx}>
+                            <td>{author.name}</td>
+                            <td><Link to={"/update/"+author._id} className="tablebtnupd">update</Link>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button className="tablebtndel" onClick={(e)=>{deleteAuthor(author._id)}}>delete</button></td>
+                        </tr>})}
+                    </tbody>
+            </table>
+            </div>
+            <div className="col"></div>
         </div>
 
     )

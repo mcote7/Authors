@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -25,11 +26,48 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+<!-- <---------------------------------------------------------------------------------------scripts for bakground------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+<!-- -------------------------------------------------------------------- -->
+    <!-- <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script> -->
+<!-- <------------------------------------------------------------------------------------------------------------------ -->
     <title>React App</title>
+
   </head>
-  <body>
+  <body id="tryme">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+<!--<----------------------------------------------------------------------wrapper background see index.css ---<<<<<<<<  -->
     <div id="root"></div>
+    <script>
+      VANTA.BIRDS({
+        el: "#tryme",
+        // birdSize: 1.50,
+        // wingSpan: 21.00,
+        // speedLimit: 4.00,
+        // separation: 32.00,
+        // alignment: 33.00,
+        // cohesion: 33.00,
+        // quantity: 2.00
+      });
+      </script>
+      <!-- -------------------------- -->
+      <!-- <script>
+        VANTA.WAVES({
+          el: "#rootwrapper",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x3a0c4f,
+          shininess: 98.00,
+          waveHeight: 26.00,
+          waveSpeed: 0.70
+        })
+        </script> -->
+<!-- <------------------------------------------------------------------------------------------------------------------ -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

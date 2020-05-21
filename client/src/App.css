@@ -1,4 +1,145 @@
+.colors {
+  color: #fcf5bc;
+  color: #f3ac63;
+  color: #ffbaac;
+  color: #ec8362;
+  color: #f78084;
+  color: #f297ee;
+  color: #fc7db2;
+  color: #af366a;
+  color: #07192f;
+}
 .App {
   text-align: center;
 }
+/* --------------------------------header and navi------------------------------------ */
+.myheader {
+  /* background-color: #061425; */
+}
+.navrow {
+  padding-top: 80px;
+}
+.mylinkwrapper {
+  float: left;
+  margin-left: 60px;
+  margin-right: 125px;
+  padding: 20px;
+}
+.mynavlinks {
+  display: inline-block;
+  color: #f88e6d;
+}
+.mynavlinks:hover {
+  display: inline-block;
+  transform: scale(1.25);
+  text-decoration: none;
+  color: #fcf5bc;
+}
+/* ------------------------------------title------------------------------------------ */
+.mytitle {
+  display: inline-flex;
+  margin-bottom: 45px;
+  border: double 8px transparent;
+  border-bottom-right-radius: 150px;
+  border-top-left-radius: 90px;
+  background-image: linear-gradient(#061425, #061425), 
+                    linear-gradient(to right, #fc7db2, #f88e6d);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.mytitleinner {
+  display: inline-flex;
+  margin: 0px 30px 0px 30px;
+}
+h1 {
+  font-size: 64px;
+  font-style: italic;
+  font-family: 'FontAwesome' !important;
+  font-weight: bold;
+}
+.a {
+  color: #f88e6d;
+}
+.a:hover {
+  color: #fcf5bc;
+}
+.b {
+  color: #fc7db2;
+}
+.b:hover {
+  color: #f297ee;
+}
+.fab {
+  color: #fc7db2;
+  font-family: 'FontAwesome' !important; 
+}
+.fab:hover {
+  color: #f297ee;
+}
+/* -------------------------------display component----------------------------------------- */
+.maindisplay {
+  margin-top: 50px;
+}
+.tablewrapper {
+  margin-bottom: 20px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-bottom-right-radius: 90px;
+  border-top-left-radius: 90px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #31465f;
+  opacity: 0.95;
+}
+thead th {
+  color: black;
+  padding: 25px;
+}
+td {
+  color: white;
+  padding: 25px;
+}
 
+tr:nth-child(even) {
+  border: 1px solid #07192f;
+}
+tr:nth-child(odd) {
+  border: 1px solid #07192f;
+}
+/* ----------------------------------buttons--------------------------- */
+.tablebtndel {
+  padding: 8px 18px;
+  border: solid 3px #fc7db2;
+  border-radius: 12px;
+  color: #f88e6d;
+  background-color: #061425;
+}
+.tablebtndel:hover {
+  border-color: #f88e6d;
+  background-color: #02234d;
+  color: #fc7db2;
+}
+.tablebtndel:focus {
+  outline: none;
+}
+/* ------------------------ */
+.tablebtnupd {
+  padding: 11px 18px;
+  border: solid 3px #f88e6d;
+  border-radius: 12px;
+  color: #fc7db2;
+  background-color: #061425;
+}
+.tablebtnupd:hover {
+  text-decoration: none;
+  border-color: #fc7db2;
+  background-color: #02234d;
+  color: #f88e6d;
+}
+.tablebtnupd:focus {
+  outline: none;
+}

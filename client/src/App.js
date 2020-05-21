@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import { Router, Link } from '@reach/router';
+import { Router } from '@reach/router';
 import AuthorsMain from './components/AuthorsMain';
 import Create from './components/Create';
 import Update from './components/Update';
+import Header from './components/Header'
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Favorite Authors</h1>
-      <Link to="/addauthor">add an author</Link>
+      <Header />
       <Router>
         <AuthorsMain path="/" />
         <Create path="/addauthor" />
