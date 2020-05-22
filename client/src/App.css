@@ -13,9 +13,9 @@
   text-align: center;
 }
 /* --------------------------------header and navi------------------------------------ */
-.myheader {
-  /* background-color: #061425; */
-}
+/* .myheader {
+  background-color: #061425;
+} */
 .navrow {
   padding-top: 80px;
 }
@@ -92,7 +92,7 @@ table {
 }
 thead th {
   color: rgb(255,255,255);
-  padding: 45px 35px 45px 65px;
+  padding: 46px 35px 46px 65px;
 }
 .thlink {
   color: rgb(255,255,255);
@@ -145,7 +145,7 @@ tr:nth-child(odd) {
 .tablebtnupd:focus {
   outline: none;
 }
-/* ------------------------------------------------------------------- */
+/* ----------------------------display names butons--------------------------------------- */
 .mynames {
   padding-top: 3px;
   padding-bottom: 3px;
@@ -156,3 +156,43 @@ tr:nth-child(odd) {
     transform: scale(1.25);
     cursor: pointer;
 }
+/* ----------------------------------forms------------------------------------------------- */
+.myinput {
+  background-color: transparent;
+  border: none;
+  caret-color: white;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+.myinput:focus {
+  outline: none;
+}
+.tdinput {
+  padding: 9px;
+}
+.tdbutt {
+  padding: 36px;
+}
+.myerror {
+  margin: -36px;
+}
+/* --------------------------------------clock---------------------------------------------- */
+.clockrow {
+  margin: 60px;
+  justify-content: flex-end;
+}
+.linkrow {
+  margin: 60px;
+  letter-spacing: 5px;
+}
+.myfootlinks {
+  display: inline-block;
+  color: #f88e6d;
+}
+.myfootlinks:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: #fcf5bc;
+}
+

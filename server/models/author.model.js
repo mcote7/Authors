@@ -6,11 +6,11 @@ const AuthorSchema = new mongoose.Schema({
         type: String,
         minlength: [
             3,
-            "name must be at least 3 letters long . . ."
+            "name must be at least 3 letters long"
         ],
         required: [
             true,
-            "name is required . . ."
+            "name is required"
         ]
     },
 

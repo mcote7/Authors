@@ -4,7 +4,8 @@ import { Router } from '@reach/router';
 import AuthorsMain from './components/AuthorsMain';
 import Create from './components/Create';
 import Update from './components/Update';
-import Header from './components/Header'
+import Header from './components/Header';
+import Clock from './components/Clock';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Create path="/addauthor" />
         <Update path="/update/:id" />
       </Router>
+      <Clock />
     </div>
   );
 }

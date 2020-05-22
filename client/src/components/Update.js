@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import { navigate } from '@reach/router';
+import { Link, navigate } from '@reach/router';
 
 const UpdateProduct = props => {
 
@@ -42,16 +42,35 @@ const UpdateProduct = props => {
     }
 
     return (
-
-        <form onSubmit={onSubmitHandler}>
-                <label>Name</label><br/>
-                <input  type="text" value={name} onChange = {(e)=>setName(e.target.value)}/><br/>
-                {errors.map((err, index) => <span style={{color:'red'}} key={index}>{err}</span>)}
-                <button className="createbtn" type="submit">submit</button>
-                <button className="cancelbtn" onClick={cancelBtn} >cancel</button>
-        </form>
-
+        <div className="row">
+        <div className="col"></div>
+            <div className="col">
+                <form onSubmit={onSubmitHandler}>
+                    <table>
+                        <thead>
+                            <th><Link style={{marginRight: "32px"}} to="/" className="thlink">Name</Link></th>
+                        </thead>
+                        {errors.map((err, index) => <p className="myerror" style={{color:'red'}} key={index}>{err}</p>)}
+                        <tbody>
+                            <tr>
+                                <td className="tdinput"><input autoFocus spellCheck="false" className="myinput" type="text" value={name} onChange = {(e)=>setName(e.target.value)}/></td>
+                            </tr>
+                            <tr>
+                                <td className="tdbutt">
+                                    <button style={{padding: "8px 18px"}} className="tablebtnupd" type="submit">submit</button>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button className="tablebtndel" onClick={cancelBtn} >cancel</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        <div className="col"></div>
+    </div>
     )
 }
 
 export default UpdateProduct;
+
+
