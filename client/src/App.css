@@ -52,23 +52,18 @@
   margin: 0px 30px 0px 30px;
 }
 h1 {
+  background-image: -webkit-linear-gradient(left, #fc7db2, #f88e6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 64px;
   font-style: italic;
-  font-family: 'FontAwesome' !important;
+  font-family: serif;
   font-weight: bold;
 }
-.a {
-  color: #f88e6d;
-}
-.a:hover {
+h1:hover {
   color: #fcf5bc;
 }
-.b {
-  color: #fc7db2;
-}
-.b:hover {
-  color: #f297ee;
-}
+/* icon */
 .fab {
   color: #fc7db2;
   font-family: 'FontAwesome' !important; 
@@ -92,18 +87,25 @@ table {
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
-  background-color: #31465f;
-  opacity: 0.95;
+  background-color: rgb(49, 70, 95, 0.6);
+  /* opacity: 0.95; */
 }
 thead th {
-  color: black;
-  padding: 25px;
+  color: rgb(255,255,255);
+  padding: 45px 35px 45px 65px;
+}
+.thlink {
+  color: rgb(255,255,255);
+  border-bottom: solid;
+}
+.thlink:hover {
+  color: rgb(255,255,255);
+  text-decoration: none;
 }
 td {
   color: white;
-  padding: 25px;
+  padding: 35px;
 }
-
 tr:nth-child(even) {
   border: 1px solid #07192f;
 }
@@ -142,4 +144,15 @@ tr:nth-child(odd) {
 }
 .tablebtnupd:focus {
   outline: none;
+}
+/* ------------------------------------------------------------------- */
+.mynames {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #415c7e;
+  border-radius: 12px;
+}
+.mynames:hover {
+    transform: scale(1.25);
+    cursor: pointer;
 }

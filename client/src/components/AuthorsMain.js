@@ -34,13 +34,13 @@ const AuthorsMain = () => {
             <div className="col tablewrapper">
             <table>
                 <thead>
-                    <th>Author Name</th>
-                    <th>Actions</th>
+                    <th><Link to="/" className="thlink">Author Name</Link></th>
+                    <th><Link to="/"className="thlink">Actions</Link></th>
                 </thead>
                 <tbody>
                 {loaded && authors.sort((a, b) => (a.name > b.name) ? 1 : -1).map((author, idx)=>{
                 return <tr key={idx}>
-                            <td>{author.name}</td>
+                            <td><p className="mynames" >{author.name}</p></td>
                             <td><Link to={"/update/"+author._id} className="tablebtnupd">update</Link>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             <button className="tablebtndel" onClick={(e)=>{deleteAuthor(author._id)}}>delete</button></td>
