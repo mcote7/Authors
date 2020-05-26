@@ -12,3 +12,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* #Myback {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+} */
+/*
+body {
+  height: 100vh,
+}
+TRY ABOVE FIRST ^
+#vantadiv {
+  height: 100%,
+  background: ???
+}
+*/
+
+

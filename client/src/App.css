@@ -14,7 +14,7 @@
 }
 /* --------------------------------header and navi------------------------------------ */
 /* .myheader {
-  background-color: #061425;
+  background-color: rgb(49, 70, 95, 0.1);;
 } */
 .navrow {
   padding-top: 80px;
@@ -88,7 +88,7 @@ table {
   margin-bottom: 50px;
   text-align: center;
   background-color: rgb(49, 70, 95, 0.6);
-  /* opacity: 0.95; */
+/* rgb alpha channel for transparency */
 }
 thead th {
   color: rgb(255,255,255);

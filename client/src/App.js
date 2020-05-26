@@ -7,6 +7,7 @@ import Update from './components/Update';
 import Header from './components/Header';
 import Clock from './components/Clock';
 
+// change clock to footer component
 
 function App() {
   return (
