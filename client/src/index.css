@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  /* height: 100%; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,23 +14,13 @@ code {
     monospace;
 }
 
-/* #Myback {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
-} */
-/*
-body {
-  height: 100vh,
-}
-TRY ABOVE FIRST ^
-#vantadiv {
-  height: 100%,
-  background: ???
-}
-*/
 
+/* #myback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
 
